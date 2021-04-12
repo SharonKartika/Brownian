@@ -82,10 +82,12 @@ function draw() {
   
   for (let i = 0; i < nWalker; i++) {
     walkers[i].step();
+    if (!mouseIsPressed){
     walkers[i].show();
+    }
   }
 }
 
-function mousePressed(){
-  setup();
-}
+// function mousePressed(){
+//   setup();
+// }
